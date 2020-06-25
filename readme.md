@@ -79,7 +79,7 @@ df = pd.read_csv('data.csv')
 df.head()
 ```
 
-![data.png](./demo/data.png)
+![data.png](/demo/data.png)
 
 We can find the dimensions of the data set using the panda dataset ‘shape’ attribute.
 
