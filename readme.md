@@ -79,7 +79,7 @@ df = pd.read_csv('data.csv')
 df.head()
 ```
 
-![data.png](/demo/data.png)
+![data](./Demo/data.png)
 
 We can find the dimensions of the data set using the panda dataset ‘shape’ attribute.
 
@@ -87,7 +87,7 @@ We can find the dimensions of the data set using the panda dataset ‘shape’ a
 #Number and rows and columns in the datasets
 df.shape
 ```
-![shape](./shape.png)
+![shape](./Demo/shape.png)
 
 ## Missing or Null Data points
 
@@ -97,7 +97,7 @@ We can find any missing or null data points of the data set (if there is any) us
 #Count the number of empty values in each column
 df.isna().sum()
 ```
-![null](./nullvalue.png)
+![null](./Demo/nullvalue.png)
 
 There is a column that has all the null values so we have to drop it.
 
@@ -143,7 +143,7 @@ df.iloc[:,1:32].corr()
 plt.figure(figsize=(10,10))
 sns.heatmap(df.iloc[:,1:12].corr(),annot=True,fmt='.0%')
 ```
-![heatmap](./heatmap.png)
+![heatmap](./Demo/heatmap.png)
 
 # Phase 3 — Feature Scaling
 
@@ -216,7 +216,7 @@ def models(X_train , Y_train):
 model = models(X_train,Y_train)
 ```
 
-![accurate](./accurate.png)
+![accurate](./Demo/accurate.png)
 
 To check the accuracy we need to import confusion_matrix method of metrics class. The confusion matrix is a way of tabulating the number of mis-classifications, i.e., the number of predicted classes which ended up in a wrong classification bin based on the true classes.
 
@@ -237,7 +237,7 @@ for i in range(len(model)):
     print('Accuracy of model ', Accuracy)
 ```
 
-![accuracy](./accuracy.png)
+![accuracy](./Demo/accuracy.png)
 
 **So finally we have built our classification model and we can see that Random Forest Classification algorithm gives the best results for our dataset. Well its not always applicable to every dataset. To choose our model we always need to analyze our dataset and then apply our machine learning model.**
 
